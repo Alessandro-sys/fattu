@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaggio Importante</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1e293b;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #ef4444;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.1s, background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #dc2626;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <button id="alertBtn">Clicca qui</button>
+
+    <script>
+        // Mostra l'alert quando si clicca sul bottone
+        const btn = document.getElementById('alertBtn');
+        btn.addEventListener('click', () => {
+            alert('Fattu speng!');
+        });
+
+        // Se invece vuoi che l'alert parta in automatico appena si apre la pagina,
+        // ti basta togliere i due slash (//) dalla riga qui sotto:
+        
+        // window.onload = () => alert('Fattu speng!');
+    </script>
+
+</body>
+</html>
