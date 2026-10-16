@@ -1,6 +1,6 @@
 # File Audio
 
-In questa cartella puoi inserire i tuoi 6 file audio in formato MP3.
+In questa cartella puoi inserire i file audio in formato MP3.
 
 Nomi predefiniti attesi:
 - `audio1.mp3`
@@ -9,5 +9,6 @@ Nomi predefiniti attesi:
 - `audio4.mp3`
 - `audio5.mp3`
 - `audio6.mp3`
+- `audio7.mp3` (facoltativo)
 
-> **Nota:** Puoi sostituire direttamente questi file con i tuoi audio o modificare la lista `audioFiles` all'interno di `index.html`.
+Gli audio vengono riprodotti in ordine a ogni clic, poi la sequenza ricomincia da `audio1.mp3`. Quando avrai il settimo audio, trascina `audio7.mp3` in questa cartella: la pagina lo userà dopo `audio6.mp3` al successivo caricamento.
